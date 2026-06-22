@@ -1,7 +1,8 @@
 @extends('admin.layout')
 @section('content')
 
-    <form>
+    <form action="/sliderstore" method="post" enctype="multipart/form-data">
+        @csrf
         <div class="row gx-3">
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                 <div class="card mb-3">
