@@ -92,3 +92,7 @@ Route::get('/track', function () {
 Route::get('/preorder', function () {
     return view('preorder');
 });
+
+Route::get('/admindash', function () {
+    return view('admin.layout');
+});

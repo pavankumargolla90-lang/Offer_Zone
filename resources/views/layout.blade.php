@@ -157,7 +157,7 @@
                                 <li class="menu-item position-relative">
                                     <a href="/" class="item-link">
                                         <span class="text cus-text">
-                                         kalyan Rahul
+                                         Home
                                         </span>
                                     </a>
 
@@ -165,14 +165,14 @@
                                 <li class="menu-item">
                                     <a href="/shop" class="item-link">
                                         <span class="text cus-text">
-                                            pawan Shop
+                                            Shop
                                         </span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="/about" class="item-link">
                                         <span class="text cus-text">
-                                            pawan Us
+                                            About Us
                                         </span>
                                     </a>
                                 </li>
