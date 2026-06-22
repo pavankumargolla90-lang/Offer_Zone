@@ -99,12 +99,13 @@ Route::get('/admindash', function () {
 });
 
 
+
 ///////////////////////////////////////////Admin//////////////////////////////////////////////
-Route::controller(SliderController::class)->group(function(){
-    Route::get('/slider','slider')->name('slider');
-    Route::post('/sliderstore','sliderstore')->name('sliderstore');
-    Route::get('/editslider/{id}','editslider')->name('editslider');
-    Route::post('/updateslider/{id}','updateslider')->name('updateslider');
-    Route::get('/deleteslider/{id}','deleteslider')->name('deleteslider');
-}); 
+Route::controller(SliderController::class)->group(function () {
+    Route::get('/slider', 'slider')->name('slider');
+    Route::post('/sliderstore', 'sliderstore')->name('sliderstore');
+    Route::get('/editslider/{id}', 'editslider')->name('editslider');
+    Route::post('/updateslider/{id}', 'updateslider')->name('updateslider');
+    Route::get('/deleteslider/{id}', 'deleteslider')->name('deleteslider');
+});
 
