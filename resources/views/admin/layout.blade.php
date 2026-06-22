@@ -220,9 +220,9 @@
                         <i class="icon-search"></i>
                     </div>
                     <div class="header-actions">
-                        <div class="d-md-flex d-none">
+                        <!-- <div class="d-md-flex d-none">
                             <div class="dropdown">
-                                <a class="dropdown-toggle d-flex p-3 position-relative" href="#!" role="button"
+                                <a class="dropdown-toggle d-flex p-3 position-relative" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="{{ asset('admin/assets/images/flags/1x1/gb.svg') }}" class="flag-img"
                                         alt="Great Britain" />
@@ -291,12 +291,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="dropdown ms-2">
                             <a class="dropdown-toggle d-flex align-items-center user-settings" href="#!" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <span>Fuzail Malik</span>
+                                <span>Offer_Zone</span>
                                 <img src="{{ asset('admin/assets/images/user3.png') }}"
                                     class="img-3x m-2 me-0 rounded-3" alt="User Avatar" />
                             </a>
