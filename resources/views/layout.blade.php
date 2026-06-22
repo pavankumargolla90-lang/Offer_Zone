@@ -202,9 +202,9 @@
                         <div class="tf-list list-currenci d-none d-xxl-flex">
                             <div class="tf-currencies">
                                 <select class="tf-dropdown-select style-default type-currencies">
-                                    <option selected data-thumbnail="assets/images/country/us.png">United States (USD $)
+                                    <option selected data-thumbnail="assets/images/country/ind.png">INDIA (IND $)
                                     </option>
-                                    <option data-thumbnail="assets/images/country/vn.png">Viet Nam (VND ₫)</option>
+                                    <!-- <option data-thumbnail="assets/images/country/vn.png">Viet Nam (VND ₫)</option> -->
                                 </select>
                             </div>
                             <div class="tf-languages">
