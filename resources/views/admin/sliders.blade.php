@@ -1,6 +1,17 @@
 @extends('admin.layout')
 @section('content')
-
+    @if(session('success'))
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: '{{ session("success") }}',
+                confirmButtonColor: '#198754',
+                timer: 2500,
+                showConfirmButton: false
+            });
+        </script>
+    @endif
     <form action="/sliderstore" method="post" enctype="multipart/form-data">
         @csrf
         <div class="row gx-3">
@@ -39,6 +50,8 @@
                             <label for="formContent" class="form-label">Title</label>
                             <input class="form-control" id="formContent" name="title" rows="5"
                                 placeholder="Enter your title here..." required=""></input>
+                            <div class="invalid-feedback">Please choose an image file to upload.</div>
+                            <div class="valid-feedback">Looks good!</div>
                         </div>
                     </div>
                 </div>

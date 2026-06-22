@@ -13,7 +13,7 @@
     <meta property="og:description" content="Marketplace for Bootstrap Admin Dashboards">
     <meta property="og:type" content="Website">
     <meta property="og:site_name" content="Bootstrap Gallery">
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="shortcut icon" href="{{ asset('admin/assets/images/favicon.svg') }}" />
     <link rel="stylesheet" href="{{ asset('admin/assets/fonts/icomoon/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('admin/assets/css/main.min.css') }}" />
