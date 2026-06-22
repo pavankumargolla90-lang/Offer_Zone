@@ -165,7 +165,7 @@
                                 <li class="menu-item">
                                     <a href="/shop" class="item-link">
                                         <span class="text cus-text">
-                                            Shop
+                                           shopping
                                         </span>
                                     </a>
                                 </li>
