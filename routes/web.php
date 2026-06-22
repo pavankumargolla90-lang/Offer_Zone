@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\SliderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -96,3 +97,14 @@ Route::get('/preorder', function () {
 Route::get('/admindash', function () {
     return view('admin.layout');
 });
+
+
+///////////////////////////////////////////Admin//////////////////////////////////////////////
+Route::controller(SliderController::class)->group(function(){
+    Route::get('/slider','slider')->name('slider');
+    Route::post('/sliderstore','sliderstore')->name('sliderstore');
+    Route::get('/editslider/{id}','editslider')->name('editslider');
+    Route::post('/updateslider/{id}','updateslider')->name('updateslider');
+    Route::get('/deleteslider/{id}','deleteslider')->name('deleteslider');
+}); 
+

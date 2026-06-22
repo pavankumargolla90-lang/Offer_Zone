@@ -7,7 +7,9 @@
 
 
 <!-- Mirrored from tfamerce.vercel.app// by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Feb 2026 11:40:48 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <meta charset="utf-8">
     <title>OfferZone</title>
@@ -195,16 +197,16 @@
                     </div>
                     <div class="header-center ">
                         <a href="/" class="logo-site">
-                            <img loading="lazy" width="150" height="30" src="assets/images/logo/offerzone.jpeg" alt="Image">
+                            <img loading="lazy" width="150" height="30" src="assets/images/logo/offerzone.jpeg"
+                                alt="Image">
                         </a>
                     </div>
                     <div class="header-right">
                         <div class="tf-list list-currenci d-none d-xxl-flex">
                             <div class="tf-currencies">
                                 <select class="tf-dropdown-select style-default type-currencies">
-                                    <option selected data-thumbnail="assets/images/country/ind.png">INDIA (IND $)
-                                    </option>
-                                    <!-- <option data-thumbnail="assets/images/country/vn.png">Viet Nam (VND ₫)</option> -->
+                                    <option selected data-thumbnail="assets/images/country/us.png">(USD $)</option>
+                                    <option data-thumbnail="assets/images/country/vn.png">(VND ₫)</option>
                                 </select>
                             </div>
                             <div class="tf-languages">
@@ -371,9 +373,8 @@
                         <div class="tf-list list-currenci">
                             <div class="tf-currencies">
                                 <select class="tf-dropdown-select style-default type-currencies">
-                                    <option selected data-thumbnail="assets/images/country/us.png">United States (USD $)
-                                    </option>
-                                    <option data-thumbnail="assets/images/country/vn.png">Viet Nam (VND ₫)</option>
+                                    <option selected data-thumbnail="assets/images/country/us.png">(USD $)</option>
+                                    <option data-thumbnail="assets/images/country/vn.png">(VND ₫)</option>
                                 </select>
                             </div>
                             <div class="tf-languages">
@@ -826,8 +827,7 @@
                                 src="assets/images/product/single/detail-1.jpg" alt="Image Product">
                         </a>
                         <div class="prd-content">
-                            <a href="/productdetails"
-                                class="prd-name fw-medium link-underline link text-capitalize">
+                            <a href="/productdetails" class="prd-name fw-medium link-underline link text-capitalize">
                                 linen slim-fit shirt
                             </a>
                             <div class="price-wrap">
@@ -1452,8 +1452,7 @@
                                     Check Out
                                 </a>
                             </div>
-                            <a href="/shop"
-                                class="d-flex justify-content-center fw-semibold text-center link">
+                            <a href="/shop" class="d-flex justify-content-center fw-semibold text-center link">
                                 Or Continue Shopping
                             </a>
                         </div>
@@ -2140,5 +2139,5 @@
 
 
 <!-- Mirrored from tfamerce.vercel.app// by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Feb 2026 11:41:04 GMT -->
-</html>
 
+</html>
