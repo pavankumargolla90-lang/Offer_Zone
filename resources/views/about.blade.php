@@ -12,7 +12,7 @@
                     </P>
                 </div>
                 <h3>
-                    About Us
+                      Us
                 </h3>
                 <p class="text-body-1 cl-text-2">
                     With over 15 years of experience, we craft timeless collections that transcend
