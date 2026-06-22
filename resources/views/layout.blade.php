@@ -157,7 +157,7 @@
                                 <li class="menu-item position-relative">
                                     <a href="/" class="item-link">
                                         <span class="text cus-text">
-                                         House
+                                         Home
                                         </span>
                                     </a>
 
