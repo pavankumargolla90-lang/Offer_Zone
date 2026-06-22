@@ -10,7 +10,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
-    <title>Amerce - Multipurpose eCommerce HTML Template</title>
+    <title>OfferZone</title>
     <meta name="author" content="themesflat.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description"
@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="assets/images/logo/favicon.svg">
+    <link rel="shortcut icon" href="assets/images/logo/offerzone.jpeg">
     <link rel="apple-touch-icon-precomposed" href="assets/images/logo/favicon.svg">
 </head>
 
@@ -259,7 +259,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-infor d-flex flex-column align-items-start mb-lg-0">
                                 <a href="/" class="logo-site mb-16">
-                                    <img loading="lazy" width="150" height="30" src="assets/images/logo/logo.svg"
+                                    <img loading="lazy" width="150" height="30" src="assets/images/logo/offerzone.jpeg"
                                         alt="Image">
                                 </a>
                                 <p class="lh-26 cl-text-2">
@@ -379,14 +379,11 @@
                             <div class="tf-languages">
                                 <select class="tf-dropdown-select style-default type-languages">
                                     <option>English</option>
-                                    <option>العربية</option>
-                                    <option>简体中文</option>
-                                    <option>اردو</option>
                                 </select>
                             </div>
                         </div>
                         <p class="text-nocopy cl-text-2">
-                            ©2026 Amerce. All Rights Reserved.
+                            ©2026 Offer_Zone All Rights Reserved.
                         </p>
                         <ul class="tf-list payment-list">
                             <li><img loading="lazy" width="38" height="24" src="assets/images/payment/visa.svg"
