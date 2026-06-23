@@ -1,14 +1,9 @@
 <?php
 
-<<<<<<< HEAD
-=======
-use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\WebsiteController;
->>>>>>> 88e4a15ffcb66530a28d4835cffd59e1cf214efa
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\admin\AboutController;
-use App\Http\Controllers\WebsiteController;
 
 
 /*
@@ -118,7 +113,6 @@ Route::controller(SliderController::class)->group(function () {
 });
 
 
-<<<<<<< HEAD
 Route::controller(AboutController::class)->group(function () {
     Route::get('/aboutform', 'about')->name('aboutform');
     Route::post('/aboutstore', 'aboutstore')->name('aboutstore');
@@ -129,10 +123,3 @@ Route::controller(AboutController::class)->group(function () {
 
 
 Route::get('/about', [WebsiteController::class, 'about'])->name('about');
-=======
-
-/////////////////////////////////Website//////////////////////////////////////////////
-Route::controller(WebsiteController::class)->group(function () {
-    Route::get('/', 'Home')->name('Home');
-});
->>>>>>> 88e4a15ffcb66530a28d4835cffd59e1cf214efa
