@@ -25,104 +25,107 @@
     <!-- /Page Title -->
     <!-- Main About -->
     <section class="section-main-about flat-spacing pt-0">
-        <div class="container">
-            <div class="flat-spacing-2">
-                <div class="hero-image">
-                    <img loading="lazy" width="1410" height="600" src="assets/images/section/s-contact-1.jpg" alt="Image">
+        @if($about)
+            <div class="container">
+                <div class="flat-spacing-2">
+                    <div class="hero-image">
+                        <img loading="lazy" width="1410" height="600" src="{{ asset('Uploads/' . $about->image) }}"
+                            alt="About Image">
+                    </div>
                 </div>
-            </div>
-            <div class="row align-items-center gy-4">
-                <div class="col-md-6">
-                    <h2 class="text-capitalize">
-                        Design, attention to detail &
-                        efficiency to delight the world
-                    </h2>
-                </div>
-                <div class="col-md-6">
-                    <p class="text-body-1">
-                        From the moment it is conceived to the moment it is worn, every one of our garments follows
-                        this
-                        path. We could do it at a fast pace. However, at Mango, we choose to take care of all those
-                        who
-                        are walking this path with us.
-                    </p>
-                </div>
-            </div>
-            <div class="flat-spacing pb-0">
-                <div class="position-relative flat-spacing pb-0">
-                    <div class="br-line fake-class top-0"></div>
-                    <div dir="ltr" class="swiper tf-swiper" data-preview="4" data-tablet="3" data-mobile-sm="2"
-                        data-mobile="1" data-space-lg="40" data-space-md="20" data-space="10" data-pagination="1"
-                        data-pagination-sm="2" data-pagination-md="3" data-pagination-lg="4">
-                        <div class="swiper-wrapper">
-                            <!-- slide 1 -->
-                            <div class="swiper-slide">
-                                <div class="box-why couter-side">
-                                    <p class="h1 fw-medium">
-                                        8.2k
-                                    </p>
-                                    <p class="title h5 fw-medium">
-                                        Products Available
-                                    </p>
-                                    <p class="sub cl-text-2">
-                                        We offer a wide selection of high-quality products to meet every need.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- slide 2 -->
-                            <div class="swiper-slide">
-                                <div class="box-why view-counter">
-                                    <p class="h1 fw-medium">
-                                        <span class="number" data-speed="1000" data-to="10">0</span><span>k</span>
-                                    </p>
-                                    <p class="title h5 fw-medium">
-                                        Happy Customers
-                                    </p>
-                                    <p class="sub cl-text-2">
-                                        Serving over 10,000 delighted customers who trust us for quality and
-                                        service.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- slide 3 -->
-                            <div class="swiper-slide">
-                                <div class="swiper-slide">
-                                    <div class="box-why view-counter">
-                                        <p class="h1 fw-medium">
-                                            <span class="number" data-speed="1000" data-to="96">0</span>
-                                        </p>
-                                        <p class="title h5 fw-medium">
-                                            Partner Brand
-                                        </p>
-                                        <p class="sub cl-text-2">
-                                            Our top-brand partnerships bring a trusted collection for your kitchen
-                                            and home.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slide 4 -->
-                            <div class="swiper-slide">
-                                <div class="swiper-slide">
-                                    <div class="box-why view-counter">
-                                        <p class="h1 fw-medium">
-                                            <span class="number" data-speed="1000" data-to="16">0</span><span>k</span>
-                                        </p>
-                                        <p class="title h5 fw-medium">
-                                            Products For Sale
-                                        </p>
-                                        <p class="sub cl-text-2">
-                                            That's why we strive to offer a diverse range of products that cater to
-                                            all styles.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sw-dot-default tf-sw-pagination"></div>
+
+                <div class="row align-items-center gy-4">
+                    <div class="col-md-6">
+                        <p class="text-body-1">
+                            {{ $about->heading }}
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2 class="text-capitalize">
+                            {{ $about->content }}
+                        </h2>
                     </div>
                 </div>
             </div>
+        @else
+            <h3>No About Data Found</h3>
+        @endif
+        <div class="flat-spacing pb-0">
+            <div class="position-relative flat-spacing pb-0">
+                <div class="br-line fake-class top-0"></div>
+                <div dir="ltr" class="swiper tf-swiper" data-preview="4" data-tablet="3" data-mobile-sm="2" data-mobile="1"
+                    data-space-lg="40" data-space-md="20" data-space="10" data-pagination="1" data-pagination-sm="2"
+                    data-pagination-md="3" data-pagination-lg="4">
+                    <div class="swiper-wrapper">
+                        <!-- slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="box-why couter-side">
+                                <p class="h1 fw-medium">
+                                    8.2k
+                                </p>
+                                <p class="title h5 fw-medium">
+                                    Products Available
+                                </p>
+                                <p class="sub cl-text-2">
+                                    We offer a wide selection of high-quality products to meet every need.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="box-why view-counter">
+                                <p class="h1 fw-medium">
+                                    <span class="number" data-speed="1000" data-to="10">0</span><span>k</span>
+                                </p>
+                                <p class="title h5 fw-medium">
+                                    Happy Customers
+                                </p>
+                                <p class="sub cl-text-2">
+                                    Serving over 10,000 delighted customers who trust us for quality and
+                                    service.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="swiper-slide">
+                                <div class="box-why view-counter">
+                                    <p class="h1 fw-medium">
+                                        <span class="number" data-speed="1000" data-to="96">0</span>
+                                    </p>
+                                    <p class="title h5 fw-medium">
+                                        Partner Brand
+                                    </p>
+                                    <p class="sub cl-text-2">
+                                        Our top-brand partnerships bring a trusted collection for your kitchen
+                                        and home.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="swiper-slide">
+                                <div class="box-why view-counter">
+                                    <p class="h1 fw-medium">
+                                        <span class="number" data-speed="1000" data-to="16">0</span><span>k</span>
+                                    </p>
+                                    <p class="title h5 fw-medium">
+                                        Products For Sale
+                                    </p>
+                                    <p class="sub cl-text-2">
+                                        That's why we strive to offer a diverse range of products that cater to
+                                        all styles.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sw-dot-default tf-sw-pagination"></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
     <!-- /Main About -->

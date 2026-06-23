@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controllers\admin\SliderController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\admin\SliderController;
+use App\Http\Controllers\admin\AboutController;
+use App\Http\Controllers\WebsiteController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -109,3 +112,14 @@ Route::controller(SliderController::class)->group(function () {
     Route::get('/deleteslider/{id}', 'deleteslider')->name('deleteslider');
 });
 
+
+Route::controller(AboutController::class)->group(function () {
+    Route::get('/aboutform', 'about')->name('aboutform');
+    Route::post('/aboutstore', 'aboutstore')->name('aboutstore');
+    Route::get('/editabout/{id}', 'editabout')->name('editabout');
+    Route::post('/updateabout/{id}', 'updateabout')->name('updateabout');
+    Route::get('/deleteabout/{id}', 'deleteabout')->name('deleteabout');
+});
+
+
+Route::get('/about', [WebsiteController::class, 'about'])->name('about');
