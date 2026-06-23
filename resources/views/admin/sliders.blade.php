@@ -1,5 +1,7 @@
 @extends('admin.layout')
+
 @section('content')
+
     @if(session('success'))
         <script>
             Swal.fire({
@@ -12,59 +14,117 @@
             });
         </script>
     @endif
-    <form action="/sliderstore" method="post" enctype="multipart/form-data">
+
+    <!-- Form -->
+    <form action="/sliderstore" method="POST" enctype="multipart/form-data">
         @csrf
+
         <div class="row gx-3">
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+
+            <!-- Heading -->
+            <div class="col-md-6">
                 <div class="card mb-3">
                     <div class="card-body">
-                        <div class="was-validated">
-                            <label for="formHeading" class="form-label">Heading</label>
-                            <input type="text" class="form-control" id="formHeading" name="heading"
-                                placeholder="Enter heading title" required="" />
-                            <div class="invalid-feedback">Please provide a heading title.</div>
-                            <div class="valid-feedback">Looks good!</div>
-                        </div>
+                        <label class="form-label">Heading</label>
+                        <input type="text" class="form-control" name="heading" placeholder="Enter heading" required>
                     </div>
                 </div>
             </div>
 
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <!-- Image -->
+            <div class="col-md-6">
                 <div class="card mb-3">
                     <div class="card-body">
-                        <div class="was-validated">
-                            <label for="formImage" class="form-label">Upload Image</label>
-                            <input type="file" class="form-control" id="formImage" name="image" aria-label="file example"
-                                required="" />
-                            <div class="invalid-feedback">Please choose an image file to upload.</div>
-                            <div class="valid-feedback">Looks good!</div>
-                        </div>
+                        <label class="form-label">Upload Image</label>
+                        <input type="file" class="form-control" name="image" required>
                     </div>
                 </div>
             </div>
 
+            <!-- Title -->
             <div class="col-12">
                 <div class="card mb-3">
                     <div class="card-body">
-                        <div class="was-validated">
-                            <label for="formContent" class="form-label">Title</label>
-                            <input class="form-control" id="formContent" name="title" rows="5"
-                                placeholder="Enter your title here..." required=""></input>
-                            <div class="invalid-feedback">Please choose an image file to upload.</div>
-                            <div class="valid-feedback">Looks good!</div>
-                        </div>
+                        <label class="form-label">Title</label>
+                        <input type="text" class="form-control" name="title" placeholder="Enter title" required>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12">
-                <div class="d-flex justify-content-end mb-3">
-                    <button class="btn btn-success px-4 py-2" type="submit">
-                        <i class="icon-check me-2"></i> Submit Form
-                    </button>
-                </div>
+            <!-- Submit -->
+            <div class="col-12 text-end">
+                <button class="btn btn-success">
+                    Submit Form
+                </button>
             </div>
+
         </div>
     </form>
+
+
+    <!-- TABLE -->
+    <div class="card mt-4">
+        <div class="card-header">
+            <h5>Slider List</h5>
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Heading</th>
+                        <th>Image</th>
+                        <th>Title</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @forelse($data as $slider)
+
+                        <tr>
+                            <td>{{ $loop->iteration }}</td>
+
+                            <td>{{ $slider->heading }}</td>
+
+                            <td>
+                                <img src="{{ asset('Uploads/' . $slider->image) }}" width="120" height="70">
+                            </td>
+
+                            <td>{{ $slider->title }}</td>
+
+                            <td>
+                                <a href="/editslider/{{ $slider->id }}" class="btn btn-sm btn-primary">
+                                    Edit
+                                </a>
+
+                                <a href="/deleteslider/{{ $slider->id }}" class="btn btn-sm btn-danger"
+                                    onclick="return confirm('Are you sure?')">
+                                    Delete
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+                    @empty
+
+                        <tr>
+                            <td colspan="5" class="text-center">
+                                No Data Found
+                            </td>
+                        </tr>
+
+                    @endforelse
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
 
 @endsection
