@@ -62,7 +62,7 @@
                         <div class="swiper-slide">
                             <div class="box-why couter-side">
                                 <p class="h1 fw-medium">
-                                    8.2k
+                                    18.2k
                                 </p>
                                 <p class="title h5 fw-medium">
                                     Products Available
@@ -76,7 +76,7 @@
                         <div class="swiper-slide">
                             <div class="box-why view-counter">
                                 <p class="h1 fw-medium">
-                                    <span class="number" data-speed="1000" data-to="10">0</span><span>k</span>
+                                    <span class="number" data-speed="1000" data-to="10">48.7</span><span>k</span>
                                 </p>
                                 <p class="title h5 fw-medium">
                                     Happy Customers
@@ -92,7 +92,7 @@
                             <div class="swiper-slide">
                                 <div class="box-why view-counter">
                                     <p class="h1 fw-medium">
-                                        <span class="number" data-speed="1000" data-to="96">0</span>
+                                        <span class="number" data-speed="1000" data-to="96">70+</span>
                                     </p>
                                     <p class="title h5 fw-medium">
                                         Partner Brand
@@ -109,7 +109,7 @@
                             <div class="swiper-slide">
                                 <div class="box-why view-counter">
                                     <p class="h1 fw-medium">
-                                        <span class="number" data-speed="1000" data-to="16">0</span><span>k</span>
+                                        <span class="number" data-speed="1000" data-to="16">230</span><span>k</span>
                                     </p>
                                     <p class="title h5 fw-medium">
                                         Products For Sale
