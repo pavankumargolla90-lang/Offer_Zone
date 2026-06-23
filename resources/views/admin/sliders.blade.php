@@ -91,7 +91,7 @@
                             <td>{{ $slider->heading }}</td>
 
                             <td>
-                                <img src="{{ asset('Uploads/'   `. $slider->image) }}" width="120" height="70">
+                                <img src="{{ asset('Uploads/' . $slider->image) }}" width="120" height="70">
                             </td>
 
                             <td>{{ $slider->title }}</td>
