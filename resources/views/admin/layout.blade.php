@@ -35,10 +35,10 @@
                 </div>
                 <div class="sidebarMenuScroll">
                     <ul class="sidebar-menu">
-                        <li class="active current-page">
+                        <!-- <li class="active current-page">
                             <a href="#">
                                 <i class="icon-home"></i>
-                                <span class="menu-text">Analytics</span>
+                                <span class="menu-text">AnalyHomtics</span>
                             </a>
                         </li>
                         <li>
@@ -46,14 +46,14 @@
                                 <i class="icon-pie-chart"></i>
                                 <span class="menu-text">Statistics</span>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="treeview">
                             <a href="#">
                                 <i class="icon-book-open"></i>
-                                <span class="menu-text">Pages</span>
+                                <span class="menu-text">Home</span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="contacts.html">Contacts</a></li>
+                                <li><a href="/slider">Slider</a></li>
                                 <!-- <li><a href="faq.html">FAQ's</a></li>
                                 <li><a href="invoice-list.html">Invoice List</a></li>
                                 <li><a href="invoice.html">Invoice Details</a></li>
@@ -63,7 +63,7 @@
                                 <li><a href="profile.html">User Profile</a></li> -->
                             </ul>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#">
                                 <i class="icon-grid_on"></i>
                                 <span class="menu-text">DataTables</span>
@@ -80,14 +80,14 @@
                                 <i class="icon-align-left"></i>
                                 <span class="menu-text">Placeholder</span>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="treeview">
                             <a href="#">
                                 <i class="icon-calendar"></i>
-                                <span class="menu-text">Calendars</span>
+                                <span class="menu-text">Shop</span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="#">Daygrid View</a></li>
+                                <!-- <li><a href="#">Daygrid View</a></li> -->
                                 <!-- <li><a href="#">External Draggable</a></li>
                                 <li><a href="#">Google #</a></li>
                                 <li><a href="#">List View</a></li>
@@ -97,10 +97,10 @@
                         <li class="treeview">
                             <a href="#">
                                 <i class="icon-layers"></i>
-                                <span class="menu-text">Components</span>
+                                <span class="menu-text">About Us</span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="#">Accordions</a></li>
+                                <!-- <li><a href="#">Accordions</a></li> -->
                                 <!-- <li><a href="alerts.html">Alerts</a></li>
                                 <li><a href="avatars.html">Avatars</a></li>
                                 <li><a href="buttons.html">Buttons</a></li>
@@ -122,10 +122,26 @@
                         <li class="treeview">
                             <a href="#">
                                 <i class="icon-layout"></i>
-                                <span class="menu-text">Forms</span>
+                                <span class="menu-text">Blog</span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="#">Basic Form Inputs</a></li>
+                                <!-- <li><a href="#">Basic Form Inputs</a></li> -->
+                                <!-- <li><a href="form-checkbox-radio.html">Checkbox &amp; Radio</a></li>
+                                <li><a href="form-file-input.html">File Input</a></li>
+                                <li><a href="form-validations.html">Validations</a></li>
+                                <li><a href="date-time-pickers.html">Date Time Pickers</a></li>
+                                <li><a href="form-layouts.html">Form Layouts</a></li>
+                                <li><a href="input-tags.html">Input Tags</a></li>
+                                <li><a href="input-masks.html">Input Masks</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="icon-layout"></i>
+                                <span class="menu-text">Contact Us</span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <!-- <li><a href="#">Basic Form Inputs</a></li> -->
                                 <!-- <li><a href="form-checkbox-radio.html">Checkbox &amp; Radio</a></li>
                                 <li><a href="form-file-input.html">File Input</a></li>
                                 <li><a href="form-validations.html">Validations</a></li>
