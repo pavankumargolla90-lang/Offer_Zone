@@ -123,3 +123,4 @@ Route::controller(AboutController::class)->group(function () {
 
 
 Route::get('/about', [WebsiteController::class, 'about'])->name('about');
+Route::get('/', [WebsiteController::class, 'Home'])->name('Home');
