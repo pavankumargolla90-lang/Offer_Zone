@@ -8,92 +8,35 @@
             <!-- data-auto="true" -->
             <div class="swiper-wrapper">
                 <!-- item 1 -->
-                <div class="swiper-slide">
-                    <div class="slideshow-wrap">
-                        <div class="sld_image">
-                            <img loading="lazy" width="1920" height="730" src="assets/images/slider/slider-1.jpg"
-                                alt="Image">
-                        </div>
-                        <div class="sld_content pst-5">
-                            <div class="container">
-                                <div class="content-sld_wrap text-center">
-                                    <div class="heading">
-                                        <p class="sub-text_sld text-body-1 text-white fade-item fade-item-1 mb-15">
-                                            DISCOVER THE ART OF MODERN DRESSING
-                                        </p>
-                                        <p class="title_sld text-display fw-medium text-white fade-item fade-item-2">
-                                            Elevate Your Style with <br class="d-none d-sm-block">
-                                            Timeless Elegance
-                                        </p>
-                                    </div>
-                                    <div class="fade-item fade-item-3">
-                                        <a href="/shop" class="tf-btn btn-white">
-                                            Shop Styles
-                                        </a>
+                @foreach ($data as $slide)
+                    <div class="swiper-slide">
+                        <div class="slideshow-wrap">
+                            <div class="sld_image">
+                                <img loading="lazy" width="1920" height="730" src="{{ asset('Uploads/' . $slide->image) }}"
+                                    alt="Image">
+                            </div>
+                            <div class="sld_content pst-5">
+                                <div class="container">
+                                    <div class="content-sld_wrap text-center">
+                                        <div class="heading">
+                                            <p class="sub-text_sld text-body-1 text-white fade-item fade-item-1 mb-15">
+                                                {{$slide->heading}}
+                                            </p>
+                                            <p class="title_sld text-display fw-medium text-white fade-item fade-item-2">
+                                                {{$slide->title}}
+                                            </p>
+                                        </div>
+                                        <div class="fade-item fade-item-3">
+                                            <a href="/shop" class="tf-btn btn-white">
+                                                Shop Styles
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- item 2 -->
-                <div class="swiper-slide">
-                    <div class="slideshow-wrap">
-                        <div class="sld_image">
-                            <img loading="lazy" width="1920" height="730" src="assets/images/slider/slider-2.jpg"
-                                alt="Image">
-                        </div>
-                        <div class="sld_content pst-5">
-                            <div class="container">
-                                <div class="content-sld_wrap text-center">
-                                    <div class="heading">
-                                        <p class="sub-text_sld text-body-1 text-white fade-item fade-item-1 mb-15">
-                                            DISCOVER THE ART OF MODERN DRESSING
-                                        </p>
-                                        <p class="title_sld text-display fw-medium text-white fade-item fade-item-2">
-                                            Discover a New Level of <br class="d-none d-sm-block">
-                                            Timeless Style
-                                        </p>
-                                    </div>
-                                    <div class="fade-item fade-item-3">
-                                        <a href="/shop" class="tf-btn btn-white">
-                                            Shop Styles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- item 3 -->
-                <div class="swiper-slide">
-                    <div class="slideshow-wrap">
-                        <div class="sld_image">
-                            <img loading="lazy" width="1920" height="730" src="assets/images/slider/slider-3.jpg"
-                                alt="Image">
-                        </div>
-                        <div class="sld_content pst-5">
-                            <div class="container">
-                                <div class="content-sld_wrap text-center">
-                                    <div class="heading">
-                                        <p class="sub-text_sld text-body-1 text-white fade-item fade-item-1 mb-15">
-                                            DISCOVER THE ART OF MODERN DRESSING
-                                        </p>
-                                        <p class="title_sld text-display fw-medium text-white fade-item fade-item-2">
-                                            Define Your Style through <br class="d-none d-sm-block">
-                                            Elegant Simplicity
-                                        </p>
-                                    </div>
-                                    <div class="fade-item fade-item-3">
-                                        <a href="/shop" class="tf-btn btn-white">
-                                            Shop Styles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="sw-line-default tf-sw-pagination"></div>
         </div>

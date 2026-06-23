@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\admin\SliderController;
+use App\Http\Controllers\WebsiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,9 +22,9 @@ Route::get('/welcome', function () {
 Route::get('/layout', function () {
     return view('layout');
 });
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 Route::get('/shop', function () {
     return view('shop');
 });
@@ -109,3 +110,9 @@ Route::controller(SliderController::class)->group(function () {
     Route::get('/deleteslider/{id}', 'deleteslider')->name('deleteslider');
 });
 
+
+
+/////////////////////////////////Website//////////////////////////////////////////////
+Route::controller(WebsiteController::class)->group(function () {
+    Route::get('/', 'Home')->name('Home');
+});
