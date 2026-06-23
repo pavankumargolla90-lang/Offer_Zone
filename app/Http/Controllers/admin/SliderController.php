@@ -45,7 +45,7 @@
             $slider->title = $request->title;
             $slider->heading = $request->heading;
             $slider->save();
-            return redirect()->back()->with('success', 'Slider updated successfully!');
+            return redirect('/slider')->with('success', 'Slider updated successfully!');
 
         }
         public function deleteslider($id)

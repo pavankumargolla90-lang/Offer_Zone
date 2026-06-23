@@ -22,7 +22,7 @@
         <div class="row gx-3">
 
             <!-- Heading -->
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="card mb-3">
                     <div class="card-body">
                         <label class="form-label">Heading</label>
@@ -32,7 +32,7 @@
             </div>
 
             <!-- Image -->
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="card mb-3">
                     <div class="card-body">
                         <label class="form-label">Upload Image</label>
@@ -53,7 +53,7 @@
 
             <!-- Submit -->
             <div class="col-12 text-end">
-                <button class="btn btn-success">
+                <button class="btn btn-success" type="submit" >
                     Submit Form
                 </button>
             </div>
